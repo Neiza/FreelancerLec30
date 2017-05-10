@@ -1,7 +1,13 @@
 /*
  * Estilos de tu proyecto
  */
- header{
+ *{
+   font-family: 'Montserrat', sans-serif;
+   margin: 0;
+   padding: 0;
+ }
+
+ header, #about{
   display:inline-flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -9,13 +15,126 @@
   background-color: #18bc9c;
   color: white;
   width: 100%;
+}
+
+header{
   height: 650px;
 }
 
 header img{
-  margin: 100px;
-  }
- hr{
+  margin-top: 100px;
+  margin-bottom: 17px;
+}
+
+h1{
+  font-size: 4em;
+  font-weight: 900;
+}
+
+.line-star{
+  display: flex;
+  flex-direction: row;
+}
+
+h2{
+  font-size: 2.5em;
+  font-weight: 900;
+}
+
+.line-star hr{
    color: white;
-   width: 20px;
+   width: 100px;
+   height: 3px;
+   margin-top: 27px;
+   background: white;
  }
+
+ h3{
+   font-weight:lighter;
+   font-size: 1.4em;
+ }
+
+ .black hr{
+   color: black;
+   background: black;
+ }
+
+#portfolio, #contact{
+  display:inline-flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+  color: black;
+  width: 100%;
+}
+
+#portfolio{
+  height: 700px;
+  margin: 110px 0;
+}
+
+.line{
+  color: black;
+  margin: 20px 0;
+}
+
+#black {
+  color: black;
+}
+
+.images{
+  display: flex;
+  flex-wrap: wrap;
+  width: 76%;
+  height: 550px;
+  justify-content: space-between;
+  align-content: space-between;
+  margin: 20px 0;
+}
+
+ #portfolio img {
+   width: 31.5%;
+   height: 260px;
+ }
+
+ #about{
+   height: 445px;
+   padding-top: 102px;
+  }
+
+ #about a{
+   text-decoration: none;
+   color: white;
+   font-weight:900;
+   font-size: 1.7em;
+ }
+
+.paragraph-container{
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  height: 200px;
+  align-content: space-around;
+}
+ #about p{
+   font-size: 1.2em;
+   font-weight:400;
+   column-count: 2;
+   column-gap: 20px;
+   padding: 5px 225px;
+   line-height: 26px;
+}
+
+.btn-portfolio{
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  border: 1px solid white;
+  border-radius:5px;
+  font-size: 1.1em;
+}
+
+#contact{
+  height: 800px;
+  padding-top: 108px;
+}
